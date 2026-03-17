@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício: Listas e Tabelas</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.4; }
+        .container-listas { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px; }
+        .coluna { flex: 1; min-width: 200px; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        th, td { border: 1px solid #999; padding: 8px; vertical-align: top; }
+        .header-principal { text-align: center; font-weight: bold; background-color: #eee; }
+        ul { padding-left: 20px; }
+        .minions-img { float: left; margin-right: 15px; width: 120px; }
+    </style>
+</head>
+<body>
+
+    <h1>Listas e Tabelas em HTML</h1>
+    <hr>
+    <h3>Listas com tabelas</h3>
+
+    <div class="container-listas">
+        <div class="coluna">
+            <img src="https://via.placeholder.com/120x80" alt="Minions" class="minions-img">
+            <strong>•NES</strong><br>
+            •Mario Kart 8 Deluxe (Nintendo Switch)
+            <ul style="list-style-type: disc;">
+                <li>Mario Bros 3</li>
+                <li>Mario Lost Levels</li>
+            </ul>
+            •Pokémon Emerald (Game Boy Advance)<br>
+            •Fire Emblem: Awakening (Nintendo DS)<br>
+            •Super Mario 64 (Nintendo 64)<br>
+            •Super Smash Bros. Ultimate (Nintendo Switch)<br>
+            •Metroid Prime (GameCube)
+            <br><br>
+            <strong>SNES</strong><br>
+            •Super Mario RPG: Legend of the Seven Stars.<br>
+            •The Legend of Zelda: A Link to the Past.<br>
+            •Super Metroid.<br>
+            •Mega Man X.<br>
+            •Kirby Super Star.<br>
+            •Star Fox.
+        </div>
+
+        <div class="coluna">
+            <strong>•PlayStation (PSOne)</strong><br>
+            •Ridge Racer<br>
+            •Tomb Raider<br>
+            •Metal Gear Solid<br><br>
+            <strong>PlayStation 2 (PS2)</strong><br>
+            •Grand Theft Auto III<br>
+            •GTA 3<br>
+            •God of War<br><br>
+            <strong>PlayStation 3 (PS3)</strong><br>
+            •LittleBigPlanet<br>
+            •Grand Theft Auto V<br>
+            •The Last of Us<br><br>
+            <strong>PlayStation 4 (PS4)</strong><br>
+            •Uncharted 4: A Thief's End<br>
+            •Bloodborne<br>
+            •God of War
+        </div>
+
+        <div class="coluna">
+            <strong>PlayStation 5 (PS5)</strong><br>
+            •Marvel's Spider-Man<br>
+            •Demon's Souls<br>
+            •God of War<br><br>
+            <strong>Xbox</strong><br>
+            i. 007.<br>
+            ii. 007: Quantum of Solace<br>
+            iii. 2006 FIFA World Cup<br>
+            iv. A Kingdom for Keflings
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th colspan="5" class="header-principal">Meus Jogos Favoritos</th>
+        </tr>
+        <tr style="text-align: center; font-weight: bold;">
+            <td>NES</td>
+            <td>SNES</td>
+            <td colspan="2">Play Station</td>
+            <td>Xbox</td>
+        </tr>
+        <tr>
+            <td>
+                <ul style="list-style-type: circle;">
+                    <li>Mario Kart 8 Deluxe (Nintendo Switch)
+                        <ul style="list-style-type: square;">
+                            <li>Mario Bros 3</li>
+                            <li>Mario Lost Levels</li>
+                        </ul>
+                    </li>
+                    <li>Pokémon Emerald (Game Boy Advance)</li>
+                    <li>Fire Emblem: Awakening (Nintendo DS)</li>
+                    <li>Super Mario 64 (Nintendo 64)</li>
+                    <li>Super Smash Bros. Ultimate (Nintendo Switch)</li>
+                    <li>Metroid Prime (GameCube)</li>
+                </ul>
+            </td>
+
+            <td>
+                <ul style="list-style-type: square;">
+                    <li>Super Mario RPG: Legend of the Seven Stars.</li>
+                    <li>The Legend of Zelda: A Link to the Past.</li>
+                    <li>Super Metroid.</li>
+                    <li>Mega Man X.</li>
+                    <li>Kirby Super Star.</li>
+                    <li>Star Fox.</li>
+                </ul>
+            </td>
+
+            <td colspan="2" style="padding: 0;">
+                <table style="width: 100%; height: 100%; border: none;">
+                    <tr style="font-weight: bold; text-align: center;">
+                        <td style="border-top: none; border-left: none;">PlayStation (PSOne)</td>
+                        <td style="border-top: none;">PlayStation 2 (PS2)</td>
+                        <td style="border-top: none;">PlayStation 3 (PS3)</td>
+                        <td style="border-top: none;">PlayStation 4 (PS4)</td>
+                        <td style="border-top: none; border-right: none;">PlayStation 5 (PS5)</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td style="border-bottom: none; border-left: none;">Ridge Racer<br>Tomb Raider<br>Metal Gear Solid</td>
+                        <td style="border-bottom: none;">Grand Theft Auto III<br>GTA 3<br>God of War</td>
+                        <td style="border-bottom: none;">LittleBigPlanet<br>Grand Theft Auto V<br>The Last of Us</td>
+                        <td style="border-bottom: none;">Uncharted 4: A Thief's End<br>Bloodborne<br>God of War</td>
+                        <td style="border-bottom: none; border-right: none;">Marvel's Spider-Man<br>Demon's Souls<br>God of War</td>
+                    </tr>
+                </table>
+            </td>
+
+            <td>
+                <ol type="i">
+                    <li>007.</li>
+                    <li>007: Quantum of Solace</li>
+                    <li>2006 FIFA World Cup</li>
+                    <li>A Kingdom for Keflings</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
