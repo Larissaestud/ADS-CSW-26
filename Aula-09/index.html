@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Completo</title>
+  <style>
+   body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+}
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-top: 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Formulário de Cadastro</h2>
+
+  <form action="#" method="post">
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone">
+
+    <label for="data">Data de nascimento:</label>
+    <input type="date" id="data" name="data">
+
+    <label>Gênero:</label>
+    <input type="radio" name="genero" value="masculino"> Masculino
+    <input type="radio" name="genero" value="feminino"> Feminino
+
+    <label>Interesses:</label>
+    <input type="checkbox" name="interesse" value="tecnologia"> Tecnologia
+    <input type="checkbox" name="interesse" value="esportes"> Esportes
+
+    <label for="cidade">Cidade:</label>
+    <select id="cidade" name="cidade">
+      <option>Selecione</option>
+      <option>São Paulo</option>
+      <option>Rio de Janeiro</option>
+      <option>Vitória</option>
+    </select>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+
+  </form>
+</div>
+
+</body>
+</html>
+```
