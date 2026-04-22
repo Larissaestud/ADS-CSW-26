@@ -1,0 +1,84 @@
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+/* Estilização dos Títulos */
+h1 {
+    font-family: 'Lucida Console', Monaco, monospace;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-family: 'Lucida Console', Monaco, monospace;
+    margin-top: 1.5rem;
+    border-left: 5px solid;
+    padding-left: 10px;
+}
+
+/* Temas de Cores por Página */
+.tema-laranja h1 { background-color: rgb(255, 140, 0); }
+.tema-laranja h2 { color: rgb(116, 0, 0); border-color: rgb(116, 0, 0); }
+
+.tema-verde h1 { background-color: rgb(46, 139, 87); }
+.tema-verde h2 { color: rgb(0, 116, 110); border-color: rgb(0, 116, 110); }
+
+.tema-azul h1 { background-color: rgb(65, 105, 225); }
+.tema-azul h2 { color: rgb(50, 0, 116); border-color: rgb(50, 0, 116); }
+
+/* Layout da Navegação */
+.navegacao {
+    display: flex;
+    justify-content: space-between; /* Afasta os botões */
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+.so-proximo {
+    justify-content: flex-end; /* Empurra o botão único para a direita */
+}
+
+/* Estilo dos Botões */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-proximo {
+    background-color: #333;
+    color: white;
+}
+
+.btn-voltar {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+}
+
+/* Final */
+.final-status {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+}
